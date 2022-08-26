@@ -1,0 +1,12 @@
+arguments:
+Namespace(batch_size=64, bert_init='roberta-base', bert_lr=1e-05, checkpoint_dir=None, dataset='humanvsai', dropout=0.5, gcn_layers=2, gcn_lr=0.001, gcn_model='gcn', heads=8, m=0.7, max_length=128, n_hidden=200, nb_epochs=3, pretrained_bert_ckpt='checkpoint/roberta-base_humanvsai/checkpoint.pth')
+checkpoints will be saved in ./checkpoint/roberta-base_gcn_humanvsai
+graph information:
+Graph(num_nodes=37184, num_edges=6168352,
+      ndata_schemes={'input_ids': Scheme(shape=(128,), dtype=torch.int64), 'attention_mask': Scheme(shape=(128,), dtype=torch.int64), 'label': Scheme(shape=(), dtype=torch.int64), 'train': Scheme(shape=(), dtype=torch.float32), 'val': Scheme(shape=(), dtype=torch.float32), 'test': Scheme(shape=(), dtype=torch.float32), 'label_train': Scheme(shape=(), dtype=torch.int64), 'cls_feats': Scheme(shape=(768,), dtype=torch.float32)}
+      edata_schemes={'edge_weight': Scheme(shape=(), dtype=torch.float32)})
+Epoch: 1  Train acc: 0.8651 loss: 0.3166  Val acc: 0.8429 loss: 0.3017  Test acc: 0.8067 loss: 0.3280 precision: 0.8127 recall: 0.7997
+New checkpoint
+Epoch: 2  Train acc: 0.8262 loss: 0.3071  Val acc: 0.8286 loss: 0.3188  Test acc: 0.7750 loss: 0.3810 precision: 0.8118 recall: 0.7696
+Epoch: 3  Train acc: 0.8746 loss: 0.2553  Val acc: 0.8643 loss: 0.2853  Test acc: 0.7933 loss: 0.3890 precision: 0.8164 recall: 0.7875
+New checkpoint
